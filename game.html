@@ -319,7 +319,7 @@ function drawOverlay(){
     const frac=(elapsed%800)/800;
     const scale=1+0.5*(1-frac);
     const alpha=1-frac*0.3;
-    const label=step>=3?'GO!':(3-step).toString();
+    const label=step>=3?'FLAP':(3-step).toString();
     const color=step>=3?'#00FF88':'#F5B800';
     ctx.save();
     ctx.globalAlpha=alpha;
