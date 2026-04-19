@@ -1,6 +1,7 @@
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-#gameWrap{width:100%;max-width:900px;margin:0 auto;padding-top:50px; position:relative;user-select:none;-webkit-user-select:none;min-height: 600px;align-items:center}
+*{margin:0;padding:0;box-sizing:border-box; color: rgb(250, 214, 11);}
+#gameWrap{width:100%;max-width:900px;margin:0 auto;padding-top: 25px; position: relative;user-select:none;-webkit-user-select:none;min-height: 600px;align-items:center}
 #gameCanvas{display:block;width:100%;image-rendering:pixelated;cursor:pointer;border:3px solid #1a1a1a}
 #ui{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none}
 </style>
@@ -36,7 +37,7 @@ function resize() {
   wrap.style.width    = Math.floor(cw) + 'px';
   wrap.style.height   = Math.floor(ch) + 'px';
 }
-const PIPE_W=40,GAP=180,GRAVITY=0.38,FLAP=-6.5,SPEED=2.2,PIPE_INTERVAL=1600;
+const PIPE_W=40,GAP=140,GRAVITY=0.38,FLAP=-6.5,SPEED=2.2,PIPE_INTERVAL=1600;
 
 let state='idle';
 let moai,pipes,score,frame,lastPipe,countdown,countdownTimer,bgX;
