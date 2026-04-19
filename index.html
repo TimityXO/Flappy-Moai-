@@ -18,18 +18,18 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #000;
+            background: #ffff;
             overflow: hidden;
             font-family: Arial, sans-serif;
         }
 
         .game-container {
-            position: relative;
-            width: 95vw;           /* Full width on all devices */
-            height: 100vh;          /* Full height on all devices */
-            background-image: url("/image.png");
-            background-size: cover;
-            background-position: center;
+            position: relative;          /* Full height on all devices */
+            background-image: url("/image.jpg");
+
+            background-size: contain;
+            height: 600px;
+            width: 900px;
             overflow: hidden;
         }
 
@@ -69,10 +69,10 @@
         }
 
         /* Desktop: Keep original aspect ratio and add max size */
-        @media (min-width: 600px) {
+        @media (min-width: 900px) {
             .game-container {
-                width: 600px;
-                height: 1500px;
+                width: 900px;
+                height: 600px;
                 border: 6px solid #333;
                 border-radius: 8px;
                 box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8);
@@ -87,7 +87,7 @@
         }
 
         /* Small phones adjustment */
-        @media (max-width: 360px) {
+        @media (max-width: 480px) {
             .start-btn {
                 font-size: 24px;
                 padding: 16px 40px;
